@@ -282,3 +282,35 @@ footer {
     .span-6, .span-4, .span-8, .span-12 { grid-column: span 1; }
     .bento-item { min-height: 240px; }
 }
+
+/* Project Detail Images */
+.project-hero-img {
+    width: 100%;
+    border-radius: 24px;
+    margin-bottom: 40px;
+    object-fit: cover;
+    max-height: 500px;
+}
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 32px 0;
+}
+
+.project-gallery img {
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+    aspect-ratio: 16/10;
+}
+
+@media (max-width: 840px) {
+    .project-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+.bg-branclosr { background: url('../assets/img/projects/branclosr-mockup.png') center/cover; color: white !important; }
+.bg-branclosr p { color: rgba(255,255,255,0.8) !important; }

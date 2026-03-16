@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laptop NAS | Garvin Chanderia</title>
+    <title>Self-Hosted NAS | Garvin Chanderia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -21,29 +22,35 @@
 
     <main class="container" style="padding-top: 120px;">
         <article style="max-width: 800px; margin: 0 auto;">
-            <span class="accent-pink" style="font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Infrastructure</span>
-            <h1 style="font-size: 56px; margin-top: 10px; margin-bottom: 20px;">Laptop NAS (CasaOS).</h1>
+            <span style="font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent-color);">Hardware & Infrastructure</span>
+            <h1 style="font-size: 56px; margin-top: 10px; margin-bottom: 20px;">Self-Hosted NAS.</h1>
             <p style="font-size: 24px; color: var(--secondary-text); line-height: 1.4; margin-bottom: 40px;">
-                Repurposing old hardware into a high-performance local cloud and media server.
+                Turning old hardware into a high-performance local cloud.
             </p>
 
+            <img src="../assets/img/projects/nas-1.jpg" alt="NAS setup" class="project-hero-img">
+
             <div style="font-size: 18px; line-height: 1.8; color: var(--text-color);">
-                <h2>Concept</h2>
-                <p>Instead of purchasing dedicated server hardware, this project focuses on sustainable tech by converting an end-of-life laptop into a fully functional Network Attached Storage (NAS) and application server.</p>
+                <h2>Overview</h2>
+                <p>A project in repurposing old laptop hardware into a dedicated Network Attached Storage system running Ubuntu Server with CasaOS as the management layer. The goal: a zero-subscription local cloud for file storage, media streaming, and local AI model hosting.</p>
 
-                <h2 style="margin-top: 40px;">Technical Stack</h2>
+                <div class="project-gallery">
+                    <img src="../assets/img/projects/nas-1.jpg" alt="NAS hardware">
+                    <img src="../assets/img/projects/nas-2.jpg" alt="CasaOS dashboard">
+                </div>
+
+                <h2 style="margin-top: 40px;">Stack</h2>
                 <ul>
-                    <li><strong>OS:</strong> Ubuntu Server (Headless)</li>
-                    <li><strong>Interface:</strong> CasaOS for Docker container management.</li>
-                    <li><strong>Services:</strong> Plex Media Server, Pi-hole (network-wide ad blocking), Nextcloud, and local AI model hosting.</li>
+                    <li><strong>OS:</strong> Ubuntu Server 24.04 LTS — headless, lightweight.</li>
+                    <li><strong>Management:</strong> CasaOS for Docker-based app management.</li>
+                    <li><strong>Storage:</strong> Samba shares accessible across all devices on the network.</li>
+                    <li><strong>AI Ready:</strong> Configured for Ollama local model hosting.</li>
                 </ul>
-
-                <h2 style="margin-top: 40px;">Key Optimization</h2>
-                <p>The system was optimized for low-power consumption and heat management, ensuring stable 24/7 uptime. It serves as the primary data backup for all my architectural and product design work.</p>
                 
                 <div style="margin-top: 60px; padding: 40px; background: var(--card-bg); border-radius: 28px;">
-                    <p><strong>Focus:</strong> DevOps, Infrastructure, Sustainability</p>
-                    <p><strong>Tools:</strong> Docker, SSH, Linux Administration</p>
+                    <p><strong>Role:</strong> Solo Builder</p>
+                    <p><strong>Stack:</strong> Ubuntu Server, CasaOS, Docker, Samba, Ollama</p>
+                    <p><strong>Status:</strong> Shipped</p>
                 </div>
             </div>
         </article>

@@ -3,42 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EA AI Skill Engine | Garvin Chanderia</title>
+    <title>EA Skill Engine | Garvin Chanderia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <nav>
         <div class="container">
-            <a href="../index.html" class="logo" style="text-decoration:none; color:inherit; font-weight:600; font-size:14px;">GC.</a>
+            <a href="../index.html" class="logo">GC.</a>
             <div class="nav-links">
-                <a href="../index.html#work">Work</a>
-                <a href="mailto:chanderia.10.garvin@gmail.com">Contact</a>
+                <a href="../index.html">Home</a>
+                <a href="../about.html">About</a>
+                <a href="../projects.html">Projects</a>
+                <a href="../contact.html">Contact</a>
             </div>
         </div>
     </nav>
 
-    <div class="container" style="padding-top: 100px;">
-        <article style="max-width: 700px; margin: 0 auto;">
-            <h1 style="font-size: 48px; margin-bottom: 24px;">EA AI Skill Engine</h1>
-            <p style="font-size: 24px; color: var(--secondary-text); margin-bottom: 40px;">Autonomous capability discovery for the modern enterprise.</p>
-            
-            <div style="font-size: 19px; line-height: 1.6;">
-                <h2>Overview</h2>
-                <p>The EA AI Skill Engine is a specialized tool developed to automate the heavy lifting of Enterprise Architecture discovery. By leveraging AI to scan organizational tech stacks (ERP, CRM, BI), it maps disparate software tools directly to business capabilities, aligning them with TOGAF standards.</p>
-                
-                <br>
+    <main class="container" style="padding-top: 120px;">
+        <article style="max-width: 800px; margin: 0 auto;">
+            <span class="accent-pink" style="font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent-color);">AI & Architecture</span>
+            <h1 style="font-size: 56px; margin-top: 10px; margin-bottom: 20px;">EA Skill Engine.</h1>
+            <p style="font-size: 24px; color: var(--secondary-text); line-height: 1.4; margin-bottom: 40px;">
+                Autonomous capability mapping using LLMs to align IT stacks with business strategy.
+            </p>
+
+            <img src="../assets/img/projects/ea-skill-engine-1.png" alt="EA Skill Engine — capability mapping view" class="project-hero-img">
+
+            <div style="font-size: 18px; line-height: 1.8; color: var(--text-color);">
                 <h2>The Problem</h2>
-                <p>Traditional EA discovery is slow, manual, and often outdated by the time it's finished. Manufacturing giants and complex enterprises struggle to maintain a real-time view of their application landscape.</p>
+                <p>Enterprise Architecture practices rely on slow, manual knowledge gathering. Consultants spend weeks interviewing stakeholders and filling spreadsheets before they can produce a single capability map. The EA Skill Engine automates this — using structured LLM prompts to build, validate, and extend EA repositories at machine speed.</p>
+
+                <h2 style="margin-top: 40px;">How It Works</h2>
+                <p>The engine is built as a layered Claude skill system. A base EA skill provides methodology and metamodel knowledge. On top of that, tool-specific skills (like the Avolution ABACUS skill) handle platform integration. Organisation-specific skills (like the Bajaj Auto EA skill) encode client knowledge — coded element IDs, traceability chains, and domain relationships.</p>
+
+                <div class="project-gallery">
+                    <img src="../assets/img/projects/ea-skill-engine-1.png" alt="EA domain mapping">
+                    <img src="../assets/img/projects/ea-skill-engine-2.png" alt="Capability traceability">
+                </div>
+
+                <h2 style="margin-top: 40px;">Architecture</h2>
+                <p>The skill system follows a two-layer routing architecture: a generic reasoning layer that understands EA frameworks (TOGAF, ArchiMate, Zachman) and a platform-specific execution layer that generates ABACUS-compatible artifacts — VB.NET scripts, catalog configurations, and dashboard definitions.</p>
+
+                <h2 style="margin-top: 40px;">Impact</h2>
+                <p>Deployed in production at Invecto Technologies for the Bajaj Auto engagement. Used for KTM deal assessment, application portfolio rationalisation, and strategic architecture analysis — reducing weeks of manual work to hours of guided AI-driven sessions.</p>
                 
-                <br>
-                <h2>The Solution</h2>
-                <p>Using autonomous search and synthesis engines, the tool creates a live "capability-first" map. It identifies core systems like SAP S/4HANA or LeadSquared and documents their role in the enterprise value chain automatically.</p>
+                <div style="margin-top: 60px; padding: 40px; background: var(--card-bg); border-radius: 28px;">
+                    <p><strong>Role:</strong> Architect & Builder</p>
+                    <p><strong>Stack:</strong> Python, Claude Skills, ArchiMate, ABACUS, OpenAI API</p>
+                    <p><strong>Status:</strong> Active — in production at Invecto Technologies</p>
+                </div>
             </div>
         </article>
+    </main>
 
-        <footer style="padding: 100px 0; text-align: center; color: var(--secondary-text); font-size: 14px;">
-            <p>Built with Clawy 🦾</p>
-        </footer>
-    </div>
+    <footer style="padding: 100px 0; text-align: center; color: var(--secondary-text); font-size: 14px;">
+        <p>Built with Clawy 🦾</p>
+    </footer>
 </body>
 </html>
