@@ -4,33 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Self-Hosted NAS | Garvin Chanderia</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <a href="../index.html" class="logo">GC.</a>
-            <div class="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../about.html">About</a>
-                <a href="../projects.html">Projects</a>
-                <a href="../contact.html">Contact</a>
-            </div>
-        </div>
-    </nav>
+        <nav><div class="container"><a href="../index.html" class="logo">Garvin.</a><div class="nav-links"><a href="../index.html">Home</a><a href="../about.html">About</a><a href="../projects.html">Projects</a><a href="../contact.html">Contact</a></div></div></nav>
 
-    <main class="container" style="padding-top: 120px;">
+    <main class="container" style="padding-top: 140px; padding-bottom: 100px;">
         <article style="max-width: 800px; margin: 0 auto;">
-            <span style="font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent-color);">Hardware & Infrastructure</span>
-            <h1 style="font-size: 56px; margin-top: 10px; margin-bottom: 20px;">Self-Hosted NAS.</h1>
-            <p style="font-size: 24px; color: var(--secondary-text); line-height: 1.4; margin-bottom: 40px;">
+            <span style="font-family: var(--font-display); font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; font-size: 12px; color: var(--accent);">Hardware & Infrastructure</span>
+            <h1 style="font-family: var(--font-display); font-size: clamp(40px, 6vw, 56px); font-weight: 800; letter-spacing: -0.03em; margin-top: 10px; margin-bottom: 20px;">Self-Hosted NAS.</h1>
+            <p style="font-size: 20px; color: var(--text-secondary); line-height: 1.55; margin-bottom: 48px;">
                 Turning old hardware into a high-performance local cloud.
             </p>
 
             <img src="../assets/img/projects/nas-1.jpg" alt="NAS setup" class="project-hero-img">
 
-            <div style="font-size: 18px; line-height: 1.8; color: var(--text-color);">
+            <div style="font-size: 17px; line-height: 1.75; color: var(--text-secondary);">
                 <h2>Overview</h2>
                 <p>A project in repurposing old laptop hardware into a dedicated Network Attached Storage system running Ubuntu Server with CasaOS as the management layer. The goal: a zero-subscription local cloud for file storage, media streaming, and local AI model hosting.</p>
 
@@ -39,7 +28,7 @@
                     <img src="../assets/img/projects/nas-2.jpg" alt="CasaOS dashboard">
                 </div>
 
-                <h2 style="margin-top: 40px;">Stack</h2>
+                <h2 style="margin-top: 48px;">Stack</h2>
                 <ul>
                     <li><strong>OS:</strong> Ubuntu Server 24.04 LTS — headless, lightweight.</li>
                     <li><strong>Management:</strong> CasaOS for Docker-based app management.</li>
@@ -47,7 +36,7 @@
                     <li><strong>AI Ready:</strong> Configured for Ollama local model hosting.</li>
                 </ul>
                 
-                <div style="margin-top: 60px; padding: 40px; background: var(--card-bg); border-radius: 28px;">
+                <div style="margin-top: 64px; padding: 36px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg);">
                     <p><strong>Role:</strong> Solo Builder</p>
                     <p><strong>Stack:</strong> Ubuntu Server, CasaOS, Docker, Samba, Ollama</p>
                     <p><strong>Status:</strong> Shipped</p>
@@ -56,8 +45,6 @@
         </article>
     </main>
 
-    <footer style="padding: 100px 0; text-align: center; color: var(--secondary-text); font-size: 14px;">
-        <p>Built with Clawy 🦾</p>
-    </footer>
+        <footer class="container" style="padding: 100px 0;"><p>Built with <span class="accent-pink">♥</span> by Clawy 🦾</p></footer>
 </body>
 </html>

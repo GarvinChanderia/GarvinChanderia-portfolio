@@ -4,47 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Audio Renamer | Garvin Chanderia</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <a href="../index.html" class="logo">GC.</a>
-            <div class="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../about.html">About</a>
-                <a href="../projects.html">Projects</a>
-                <a href="../contact.html">Contact</a>
-            </div>
-        </div>
-    </nav>
+        <nav><div class="container"><a href="../index.html" class="logo">Garvin.</a><div class="nav-links"><a href="../index.html">Home</a><a href="../about.html">About</a><a href="../projects.html">Projects</a><a href="../contact.html">Contact</a></div></div></nav>
 
-    <main class="container" style="padding-top: 120px;">
+    <main class="container" style="padding-top: 140px; padding-bottom: 100px;">
         <article style="max-width: 800px; margin: 0 auto;">
-            <span style="font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent-color);">AI Engineering</span>
-            <h1 style="font-size: 56px; margin-top: 10px; margin-bottom: 20px;">AI Audio Renamer.</h1>
-            <p style="font-size: 24px; color: var(--secondary-text); line-height: 1.4; margin-bottom: 40px;">
+            <span style="font-family: var(--font-display); font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; font-size: 12px; color: var(--accent);">AI Engineering</span>
+            <h1 style="font-family: var(--font-display); font-size: clamp(40px, 6vw, 56px); font-weight: 800; letter-spacing: -0.03em; margin-top: 10px; margin-bottom: 20px;">AI Audio Renamer.</h1>
+            <p style="font-size: 20px; color: var(--text-secondary); line-height: 1.55; margin-bottom: 48px;">
                 Semantic file organisation for music producers, powered by AI.
             </p>
 
             <img src="../assets/img/projects/ai-audio-renamer.jpg" alt="AI Audio Renamer interface" class="project-hero-img">
 
-            <div style="font-size: 18px; line-height: 1.8; color: var(--text-color);">
+            <div style="font-size: 17px; line-height: 1.75; color: var(--text-secondary);">
                 <h2>The Problem</h2>
                 <p>Music producers accumulate thousands of audio files with cryptic names — "final_v3_REAL.wav", "beat_new_new.mp3". Finding the right sample during a session kills creative flow. The AI Audio Renamer analyses audio content and renames files with meaningful, searchable labels.</p>
 
-                <h2 style="margin-top: 40px;">How It Works</h2>
+                <h2 style="margin-top: 48px;">How It Works</h2>
                 <p>The tool uses OpenAI Whisper for audio analysis and GPT for semantic labelling. It processes batches of audio files, identifies instrument type, mood, tempo, and key, then renames them with a consistent taxonomy that makes any sample library instantly browsable.</p>
 
-                <h2 style="margin-top: 40px;">Features</h2>
+                <h2 style="margin-top: 48px;">Features</h2>
                 <ul>
                     <li><strong>Batch Processing:</strong> Drop a folder, get it renamed in minutes.</li>
                     <li><strong>Local-First:</strong> Supports Ollama for fully offline processing.</li>
                     <li><strong>Smart Taxonomy:</strong> Genre → Instrument → Mood → BPM → Key naming convention.</li>
                 </ul>
                 
-                <div style="margin-top: 60px; padding: 40px; background: var(--card-bg); border-radius: 28px;">
+                <div style="margin-top: 64px; padding: 36px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg);">
                     <p><strong>Role:</strong> Solo Builder</p>
                     <p><strong>Stack:</strong> Python, OpenAI Whisper, GPT-4, Ollama</p>
                     <p><strong>Status:</strong> Shipped</p>
@@ -53,8 +42,6 @@
         </article>
     </main>
 
-    <footer style="padding: 100px 0; text-align: center; color: var(--secondary-text); font-size: 14px;">
-        <p>Built with Clawy 🦾</p>
-    </footer>
+        <footer class="container" style="padding: 100px 0;"><p>Built with <span class="accent-pink">♥</span> by Clawy 🦾</p></footer>
 </body>
 </html>

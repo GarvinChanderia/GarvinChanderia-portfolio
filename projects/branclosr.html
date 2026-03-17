@@ -4,37 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BranClosr | Garvin Chanderia</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <a href="../index.html" class="logo">GC.</a>
-            <div class="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../about.html">About</a>
-                <a href="../projects.html">Projects</a>
-                <a href="../contact.html">Contact</a>
-            </div>
-        </div>
-    </nav>
-    <main class="container" style="padding-top: 120px;">
+        <nav><div class="container"><a href="../index.html" class="logo">Garvin.</a><div class="nav-links"><a href="../index.html">Home</a><a href="../about.html">About</a><a href="../projects.html">Projects</a><a href="../contact.html">Contact</a></div></div></nav>
+    <main class="container" style="padding-top: 140px; padding-bottom: 100px;">
         <article style="max-width: 800px; margin: 0 auto;">
-            <span style="font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent-color);">B2C SaaS</span>
-            <h1 style="font-size: 56px; margin-top: 10px; margin-bottom: 20px;">BranClosr.</h1>
-            <p style="font-size: 24px; color: var(--secondary-text); line-height: 1.4; margin-bottom: 40px;">
+            <span style="font-family: var(--font-display); font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; font-size: 12px; color: var(--accent);">B2C SaaS</span>
+            <h1 style="font-family: var(--font-display); font-size: clamp(40px, 6vw, 56px); font-weight: 800; letter-spacing: -0.03em; margin-top: 10px; margin-bottom: 20px;">BranClosr.</h1>
+            <p style="font-size: 20px; color: var(--text-secondary); line-height: 1.55; margin-bottom: 48px;">
                 Dual-sided marketplace cutting brand–influencer deal time from 30 days to under 48 hours.
             </p>
             <img src="../assets/img/projects/branclosr-mockup.png" alt="BranClosr platform mockup" class="project-hero-img">
-            <div style="font-size: 18px; line-height: 1.8; color: var(--text-color);">
+            <div style="font-size: 17px; line-height: 1.75; color: var(--text-secondary);">
                 <h2>The Problem</h2>
                 <p>Influencer marketing deals take 2–4 weeks to close. Brands and creators lose momentum in endless email chains, negotiation back-and-forth, and contract ambiguity. BranClosr compresses the entire cycle — discovery, negotiation, contract, payment — into a single platform targeting sub-48-hour campaign cycles for D2C brands and mid-tier influencers (10K–500K followers) in the Indian market.</p>
 
-                <h2 style="margin-top: 40px;">Technical Architecture</h2>
+                <h2 style="margin-top: 48px;">Technical Architecture</h2>
                 <p>Full-stack PWA built with Next.js 16 App Router (RSC + client components), TypeScript in strict mode, and Supabase/PostgreSQL with row-level security. State management via React Hooks, URL search params, and Zustand stores. Forms powered by React Hook Form + Zod validation. Data fetching through TanStack React Query. Styled with Tailwind CSS + shadcn/ui component patterns.</p>
 
-                <div style="margin-top: 30px; padding: 30px; background: var(--card-bg); border-radius: 20px; font-size: 15px;">
+                <div style="margin-top: 32px; padding: 32px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); font-size: 15px;">
                     <p style="margin-bottom: 8px;"><strong>Frontend:</strong> Next.js 16.1.6, TypeScript 5.x, Tailwind CSS 4.x, Lucide icons</p>
                     <p style="margin-bottom: 8px;"><strong>State:</strong> Zustand, TanStack React Query 5.x, URL search params</p>
                     <p style="margin-bottom: 8px;"><strong>Forms:</strong> React Hook Form 7.x + @hookform/resolvers + Zod 4.x</p>
@@ -45,10 +34,10 @@
                     <p><strong>Hosting:</strong> Vercel (auto-deploy from GitHub main)</p>
                 </div>
 
-                <h2 style="margin-top: 40px;">What's Built</h2>
+                <h2 style="margin-top: 48px;">What's Built</h2>
                 <p>56 TypeScript/TSX source files across a clean modular structure: public landing page with SEO optimisation and OpenGraph/JSON-LD, auth flows (login, register, OAuth callback), role-aware dashboard with campaigns, deals, deliverables, notifications, and profile pages. Components split into layout (header, sidebar, mobile nav, role guard), domain-specific (campaign cards, deal timelines, status badges), and shared (confirm dialogs, error boundaries, loading skeletons).</p>
 
-                <h2 style="margin-top: 40px;">Key Features</h2>
+                <h2 style="margin-top: 48px;">Key Features</h2>
                 <ul>
                     <li><strong>Deal Rooms:</strong> Real-time negotiation spaces with structured offer/counter-offer flows and status propagation.</li>
                     <li><strong>Smart Matching:</strong> AI-driven brand–influencer pairing based on niche, engagement, and budget fit.</li>
@@ -57,10 +46,10 @@
                     <li><strong>Notifications:</strong> Mark-as-read, real-time updates, grouped by type.</li>
                 </ul>
 
-                <h2 style="margin-top: 40px;">Documentation</h2>
+                <h2 style="margin-top: 48px;">Documentation</h2>
                 <p>Full dev-stack documentation suite generated — seven governance documents including PRD, Technical Architecture, Design Document, AI Implementation Contract, AI Rules, and more. All stored in Obsidian vault with proper frontmatter and backlinks.</p>
                 
-                <div style="margin-top: 60px; padding: 40px; background: var(--card-bg); border-radius: 28px;">
+                <div style="margin-top: 64px; padding: 36px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg);">
                     <p><strong>Role:</strong> Founder / Product Architect / Solo Developer</p>
                     <p><strong>Codebase:</strong> 56 TypeScript/TSX files, fully typed</p>
                     <p><strong>Status:</strong> Active build — deployed on Vercel, MVP in development</p>
@@ -68,8 +57,6 @@
             </div>
         </article>
     </main>
-    <footer style="padding: 100px 0; text-align: center; color: var(--secondary-text); font-size: 14px;">
-        <p>Built with Clawy 🦾</p>
-    </footer>
+        <footer class="container" style="padding: 100px 0;"><p>Built with <span class="accent-pink">♥</span> by Clawy 🦾</p></footer>
 </body>
 </html>
