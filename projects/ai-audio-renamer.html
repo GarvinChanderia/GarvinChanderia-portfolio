@@ -1,47 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Audio Renamer | Garvin Chanderia</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>AI Audio Renamer — Garvin Chanderia</title><link rel="stylesheet" href="../css/style.css"></head>
 <body>
-        <nav><div class="container"><a href="../index.html" class="logo">Garvin.</a><div class="nav-links"><a href="../index.html">Home</a><a href="../about.html">About</a><a href="../projects.html">Projects</a><a href="../contact.html">Contact</a></div></div></nav>
-
+    <nav><div class="container"><a href="../index.html" class="logo">Garvin.</a><div class="nav-links"><a href="../index.html">Home</a><a href="../about.html">About</a><a href="../projects.html">Projects</a><a href="../contact.html">Contact</a></div></div></nav>
     <main class="container" style="padding-top: 140px; padding-bottom: 100px;">
-        <article style="max-width: 800px; margin: 0 auto;">
+        <article>
             <span style="font-family: var(--font-display); font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; font-size: 12px; color: var(--accent);">AI Engineering</span>
             <h1 style="font-family: var(--font-display); font-size: clamp(40px, 6vw, 56px); font-weight: 800; letter-spacing: -0.03em; margin-top: 10px; margin-bottom: 20px;">AI Audio Renamer.</h1>
-            <p style="font-size: 20px; color: var(--text-secondary); line-height: 1.55; margin-bottom: 48px;">
-                Semantic file organisation for music producers, powered by AI.
-            </p>
-
-            <img src="../assets/img/projects/ai-audio-renamer.jpg" alt="AI Audio Renamer interface" class="project-hero-img">
-
-            <div style="font-size: 17px; line-height: 1.75; color: var(--text-secondary);">
-                <h2>The Problem</h2>
-                <p>Music producers accumulate thousands of audio files with cryptic names — "final_v3_REAL.wav", "beat_new_new.mp3". Finding the right sample during a session kills creative flow. The AI Audio Renamer analyses audio content and renames files with meaningful, searchable labels.</p>
-
-                <h2 style="margin-top: 48px;">How It Works</h2>
-                <p>The tool uses OpenAI Whisper for audio analysis and GPT for semantic labelling. It processes batches of audio files, identifies instrument type, mood, tempo, and key, then renames them with a consistent taxonomy that makes any sample library instantly browsable.</p>
-
-                <h2 style="margin-top: 48px;">Features</h2>
-                <ul>
-                    <li><strong>Batch Processing:</strong> Drop a folder, get it renamed in minutes.</li>
-                    <li><strong>Local-First:</strong> Supports Ollama for fully offline processing.</li>
-                    <li><strong>Smart Taxonomy:</strong> Genre → Instrument → Mood → BPM → Key naming convention.</li>
-                </ul>
-                
-                <div style="margin-top: 64px; padding: 36px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg);">
-                    <p><strong>Role:</strong> Solo Builder</p>
-                    <p><strong>Stack:</strong> Python, OpenAI Whisper, GPT-4, Ollama</p>
-                    <p><strong>Status:</strong> Shipped</p>
-                </div>
+            <p style="font-size: 20px; color: var(--text-secondary); line-height: 1.55; margin-bottom: 48px;">A semantic file intelligence tool that analyses audio content and renames files with meaningful, taxonomy-based labels — turning chaotic sample libraries into instantly searchable collections.</p>
+            <img src="../assets/img/projects/ai-audio-renamer.jpg" alt="AI Audio Renamer" class="project-hero-img">
+            <h2>Problem</h2>
+            <p>Music producers accumulate thousands of audio files with meaningless names. During a creative session, searching for the right sample breaks flow. The conventional solution — manual tagging — doesn't scale. The right approach is to let the audio content itself determine the metadata.</p>
+            <h2>How It Works</h2>
+            <p>The tool processes audio files in batch through OpenAI Whisper for content analysis, then uses GPT-4 (or Ollama for fully offline operation) to generate structured labels following a consistent taxonomy: Genre → Instrument → Mood → BPM → Key. Drop a folder, get it renamed in minutes.</p>
+            <h2>Design Decisions</h2>
+            <ul>
+                <li><strong>Local-first option:</strong> Ollama support ensures sensitive audio content never leaves the machine.</li>
+                <li><strong>Batch-native:</strong> Designed for folder-level operations, not individual files. Producers work in projects, not clips.</li>
+                <li><strong>Taxonomy consistency:</strong> Rigid naming convention ensures every file in a library follows the same structure regardless of when it was processed.</li>
+            </ul>
+            <div class="meta-card">
+                <p><strong>Role:</strong> Sole builder</p>
+                <p><strong>Stack:</strong> Python, OpenAI Whisper, GPT-4, Ollama</p>
+                <p><strong>Status:</strong> Shipped</p>
             </div>
         </article>
     </main>
-
-        <footer class="container" style="padding: 100px 0;"><p>Built with <span class="accent-pink">♥</span> by Clawy 🦾</p></footer>
+    <footer class="container" style="padding: 100px 0;"><p>© 2026 Garvin Chanderia</p></footer>
 </body>
 </html>

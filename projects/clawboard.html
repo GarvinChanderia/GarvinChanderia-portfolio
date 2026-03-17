@@ -1,48 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ClawBoard | Garvin Chanderia</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ClawBoard — Garvin Chanderia</title><link rel="stylesheet" href="../css/style.css"></head>
 <body>
-        <nav><div class="container"><a href="../index.html" class="logo">Garvin.</a><div class="nav-links"><a href="../index.html">Home</a><a href="../about.html">About</a><a href="../projects.html">Projects</a><a href="../contact.html">Contact</a></div></div></nav>
-
+    <nav><div class="container"><a href="../index.html" class="logo">Garvin.</a><div class="nav-links"><a href="../index.html">Home</a><a href="../about.html">About</a><a href="../projects.html">Projects</a><a href="../contact.html">Contact</a></div></div></nav>
     <main class="container" style="padding-top: 140px; padding-bottom: 100px;">
-        <article style="max-width: 800px; margin: 0 auto;">
-            <span style="font-family: var(--font-display); font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; font-size: 12px; color: var(--accent);">AI & Design</span>
+        <article>
+            <span style="font-family: var(--font-display); font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; font-size: 12px; color: var(--accent);">AI Operations</span>
             <h1 style="font-family: var(--font-display); font-size: clamp(40px, 6vw, 56px); font-weight: 800; letter-spacing: -0.03em; margin-top: 10px; margin-bottom: 20px;">ClawBoard.</h1>
-            <p style="font-size: 20px; color: var(--text-secondary); line-height: 1.55; margin-bottom: 48px;">
-                A high-end control tower for the autonomous agent era.
-            </p>
-
-            <img src="../assets/img/projects/clawboard.png" alt="ClawBoard dashboard interface" class="project-hero-img">
-
-            <div style="font-size: 17px; line-height: 1.75; color: var(--text-secondary);">
-                <h2>The Vision</h2>
-                <p>As autonomous systems handle more of our workflows, there is a need for a unified control interface. ClawBoard is designed to monitor agent health, task status, and operational costs across multiple AI systems — Claude, n8n workflows, and custom automation scripts — from a single glassmorphic dashboard.</p>
-
-                <h2 style="margin-top: 48px;">Design Language</h2>
-                <p>The UI follows a strict Apple-esque minimalist aesthetic. High-contrast grids, glassmorphism, and bold typography present complex system data in a way that feels premium and intuitive. Every element is designed to surface signal, not noise.</p>
-
-                <h2 style="margin-top: 48px;">Core Modules</h2>
-                <ul>
-                    <li><strong>Task Kanban:</strong> Real-time sync with Obsidian project boards and Asana.</li>
-                    <li><strong>Cost Watchdog:</strong> Token usage monitoring across LLM providers (Gemini, OpenAI, Anthropic).</li>
-                    <li><strong>Agent Status:</strong> Health and throughput visualisation for Clawy, n8n, and MCP servers.</li>
-                    <li><strong>Workflow Inspector:</strong> Drill into individual n8n execution logs and error states.</li>
-                </ul>
-                
-                <div style="margin-top: 64px; padding: 36px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg);">
-                    <p><strong>Role:</strong> Product Designer & Builder</p>
-                    <p><strong>Stack:</strong> Figma, React, Python, n8n API</p>
-                    <p><strong>Status:</strong> In progress — internal beta</p>
-                </div>
+            <p style="font-size: 20px; color: var(--text-secondary); line-height: 1.55; margin-bottom: 48px;">A centralised operations dashboard for monitoring autonomous agents, tracking LLM costs across providers, and maintaining visibility over workflow health at a glance.</p>
+            <img src="../assets/img/projects/clawboard.png" alt="ClawBoard" class="project-hero-img">
+            <h2>Rationale</h2>
+            <p>When you run multiple autonomous systems — Claude skills, n8n workflows, cron-triggered scripts — the question stops being "can I automate this?" and becomes "do I know what's running, what it costs, and when it breaks?" ClawBoard exists to answer that question with a single interface.</p>
+            <h2>Design</h2>
+            <p>The UI prioritises information density without clutter. Glassmorphic card system, high-contrast data grids, and bold typography designed to surface signal from complex system telemetry. Every widget answers a specific operational question: cost per project, agent throughput, failure rate, time since last successful run.</p>
+            <h2>Planned Modules</h2>
+            <ul>
+                <li><strong>Cost Watchdog:</strong> Token usage aggregation across Claude, OpenAI, and Gemini with per-project attribution and week-over-week trending.</li>
+                <li><strong>Agent Status:</strong> Health and throughput monitoring for each autonomous thread — MCP servers, n8n workflows, scheduled scripts.</li>
+                <li><strong>Task Kanban:</strong> Synced with Obsidian project boards and Asana for unified task visibility.</li>
+                <li><strong>Workflow Inspector:</strong> Drill-down into individual n8n execution logs, error states, and retry patterns.</li>
+            </ul>
+            <div class="meta-card">
+                <p><strong>Role:</strong> Product designer & builder</p>
+                <p><strong>Stack:</strong> Figma, React, Python, n8n API</p>
+                <p><strong>Status:</strong> In development</p>
             </div>
         </article>
     </main>
-
-        <footer class="container" style="padding: 100px 0;"><p>Built with <span class="accent-pink">♥</span> by Clawy 🦾</p></footer>
+    <footer class="container" style="padding: 100px 0;"><p>© 2026 Garvin Chanderia</p></footer>
 </body>
 </html>

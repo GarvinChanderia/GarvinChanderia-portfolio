@@ -1,50 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PM Outreach Engine | Garvin Chanderia</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>PM Outreach Engine — Garvin Chanderia</title><link rel="stylesheet" href="../css/style.css"></head>
 <body>
-        <nav><div class="container"><a href="../index.html" class="logo">Garvin.</a><div class="nav-links"><a href="../index.html">Home</a><a href="../about.html">About</a><a href="../projects.html">Projects</a><a href="../contact.html">Contact</a></div></div></nav>
+    <nav><div class="container"><a href="../index.html" class="logo">Garvin.</a><div class="nav-links"><a href="../index.html">Home</a><a href="../about.html">About</a><a href="../projects.html">Projects</a><a href="../contact.html">Contact</a></div></div></nav>
     <main class="container" style="padding-top: 140px; padding-bottom: 100px;">
-        <article style="max-width: 800px; margin: 0 auto;">
-            <span style="font-family: var(--font-display); font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; font-size: 12px; color: var(--accent);">Automation</span>
+        <article>
+            <span style="font-family: var(--font-display); font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; font-size: 12px; color: var(--accent);">AI · Automation</span>
             <h1 style="font-family: var(--font-display); font-size: clamp(40px, 6vw, 56px); font-weight: 800; letter-spacing: -0.03em; margin-top: 10px; margin-bottom: 20px;">PM Outreach Engine.</h1>
-            <p style="font-size: 20px; color: var(--text-secondary); line-height: 1.55; margin-bottom: 48px;">
-                Automated job search system targeting AI consulting and PM roles at 18–25 LPA.
-            </p>
-            <div style="font-size: 17px; line-height: 1.75; color: var(--text-secondary);">
-                <h2>The System</h2>
-                <p>An automated outreach pipeline for PM and AI consulting roles — lead discovery, personalised emails, LinkedIn messaging, and batch sends. Built on the same n8n + Claude MCP stack that powers the Dental Revenue Engine, reapplied to job search with different lead sources and personalisation strategies.</p>
-
-                <h2 style="margin-top: 48px;">Target Companies</h2>
-                <ul>
-                    <li><strong>Big 4:</strong> PwC AC India Advisory (referral contact), Deloitte USI, EY GDS, KPMG</li>
-                    <li><strong>West Pune Product Cos:</strong> ElasticRun, Icertis, Mindtickle, Avalara</li>
-                    <li><strong>Product-based:</strong> Companies offering hybrid/remote across Pune and Bengaluru</li>
-                </ul>
-
-                <h2 style="margin-top: 48px;">Pipeline</h2>
-                <ol style="padding-left: 24px;">
-                    <li style="margin-bottom: 12px;"><strong>Resume Scan → Role Mapping</strong> — Automated matching of skills to open roles.</li>
-                    <li style="margin-bottom: 12px;"><strong>Lead List Compilation</strong> — HR and PM contacts verified and compiled into CSV.</li>
-                    <li style="margin-bottom: 12px;"><strong>Cold Email + LinkedIn Templates</strong> — Personalised per company and role.</li>
-                    <li style="margin-bottom: 12px;"><strong>Batch Send</strong> — Automated delivery with reply tracking.</li>
-                </ol>
-
-                <h2 style="margin-top: 48px;">Current Status</h2>
-                <p>Gmail sender was blocked due to high-volume cold outreach — currently pivoting to WhatsApp Business API (Meta Cloud API) as the primary replacement channel. Lead list refresh underway for Big 4 targets.</p>
-                
-                <div style="margin-top: 64px; padding: 36px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg);">
-                    <p><strong>Role:</strong> Solo Builder</p>
-                    <p><strong>Stack:</strong> n8n, Python, Claude MCP, Gmail/WhatsApp API</p>
-                    <p><strong>Status:</strong> Active — pivoting outreach channel</p>
-                </div>
+            <p style="font-size: 20px; color: var(--text-secondary); line-height: 1.55; margin-bottom: 48px;">An automated professional networking system applying the same infrastructure principles as the Dental Revenue Engine to strategic job search — lead discovery, personalised messaging, and multi-channel delivery.</p>
+            <h2>Approach</h2>
+            <p>Treated the job search as a product problem: define the target segment, build a pipeline, measure conversion, and iterate on messaging. The system compiles verified HR and PM leads across target companies, generates personalised outreach per company context, and delivers via automated sequences with reply monitoring.</p>
+            <h2>Target Segments</h2>
+            <ul>
+                <li><strong>Big 4 Advisory:</strong> PwC AC India (referral-backed), Deloitte USI, EY GDS, KPMG India</li>
+                <li><strong>Pune Product Companies:</strong> ElasticRun, Icertis, Mindtickle, Avalara</li>
+                <li><strong>AI/ML-focused roles:</strong> AI consulting, product management, hybrid/remote options</li>
+            </ul>
+            <h2>Current State</h2>
+            <p>The Gmail sender account was blocked after high-volume outreach. Pivoting primary delivery to WhatsApp Business API (Meta Cloud API) while maintaining the lead pipeline and personalisation layer. The underlying automation infrastructure — n8n workflows, lead databases, template engines — remains fully operational.</p>
+            <div class="meta-card">
+                <p><strong>Role:</strong> Sole builder</p>
+                <p><strong>Stack:</strong> n8n, Python, Claude MCP, Gmail / WhatsApp Business API</p>
+                <p><strong>Status:</strong> Active — channel migration in progress</p>
             </div>
         </article>
     </main>
-        <footer class="container" style="padding: 100px 0;"><p>Built with <span class="accent-pink">♥</span> by Clawy 🦾</p></footer>
+    <footer class="container" style="padding: 100px 0;"><p>© 2026 Garvin Chanderia</p></footer>
 </body>
 </html>

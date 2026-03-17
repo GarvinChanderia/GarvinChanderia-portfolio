@@ -1,49 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>n8n MCP Server | Garvin Chanderia</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>n8n MCP Server — Garvin Chanderia</title><link rel="stylesheet" href="../css/style.css"></head>
 <body>
-        <nav><div class="container"><a href="../index.html" class="logo">Garvin.</a><div class="nav-links"><a href="../index.html">Home</a><a href="../about.html">About</a><a href="../projects.html">Projects</a><a href="../contact.html">Contact</a></div></div></nav>
-
+    <nav><div class="container"><a href="../index.html" class="logo">Garvin.</a><div class="nav-links"><a href="../index.html">Home</a><a href="../about.html">About</a><a href="../projects.html">Projects</a><a href="../contact.html">Contact</a></div></div></nav>
     <main class="container" style="padding-top: 140px; padding-bottom: 100px;">
-        <article style="max-width: 800px; margin: 0 auto;">
+        <article>
             <span style="font-family: var(--font-display); font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; font-size: 12px; color: var(--accent);">AI Infrastructure</span>
             <h1 style="font-family: var(--font-display); font-size: clamp(40px, 6vw, 56px); font-weight: 800; letter-spacing: -0.03em; margin-top: 10px; margin-bottom: 20px;">n8n MCP Server.</h1>
-            <p style="font-size: 20px; color: var(--text-secondary); line-height: 1.55; margin-bottom: 48px;">
-                Giving Claude hands — a custom TypeScript bridge to a self-hosted automation engine.
-            </p>
-
-            <div style="font-size: 17px; line-height: 1.75; color: var(--text-secondary);">
-                <h2>The Idea</h2>
-                <p>Claude is brilliant at reasoning but can't act on the real world. n8n is brilliant at executing workflows but can't reason. The n8n MCP Server connects the two — a custom TypeScript Model Context Protocol server that gives Claude Desktop direct control over a self-hosted n8n instance at localhost:5678.</p>
-
-                <h2 style="margin-top: 48px;">How It Works</h2>
-                <p>The MCP server exposes n8n's API as structured tools that Claude can call: list workflows, read workflow definitions, inject nodes, activate/deactivate, and trigger executions. Claude can now build, debug, and deploy entire automation workflows through natural conversation.</p>
-
-                <h2 style="margin-top: 48px;">Technical Details</h2>
-                <ul>
-                    <li><strong>Protocol:</strong> Model Context Protocol (MCP) — Anthropic's standard for tool use.</li>
-                    <li><strong>Language:</strong> TypeScript, running as a local stdio server.</li>
-                    <li><strong>Workaround:</strong> n8n's API has a bug preventing workflow creation — the server uses a create-in-UI-then-inject pattern instead.</li>
-                    <li><strong>OAuth2:</strong> Gmail integration requires one-time manual credential setup before automation activates.</li>
-                </ul>
-
-                <h2 style="margin-top: 48px;">Powers</h2>
-                <p>This server is the backbone of two major automation projects — the PM Outreach Engine and the Dental Revenue Engine. It enables Claude to orchestrate multi-step workflows: lead discovery → personalised outreach → follow-up scheduling → Telegram alerts — all from a single conversation.</p>
-                
-                <div style="margin-top: 64px; padding: 36px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg);">
-                    <p><strong>Role:</strong> Solo Builder</p>
-                    <p><strong>Stack:</strong> TypeScript, MCP Protocol, n8n API, Node.js</p>
-                    <p><strong>Status:</strong> Shipped — in daily use</p>
-                </div>
+            <p style="font-size: 20px; color: var(--text-secondary); line-height: 1.55; margin-bottom: 48px;">A custom TypeScript server that gives Claude direct operational control over a self-hosted n8n automation instance — bridging natural language reasoning with real-world workflow execution.</p>
+            <h2>Problem</h2>
+            <p>LLMs reason well but cannot act. Workflow engines execute reliably but cannot reason. The gap between "understanding what to do" and "actually doing it" is where most AI automation projects stall. This server closes that gap for my entire automation stack.</p>
+            <h2>Implementation</h2>
+            <p>Built as a Model Context Protocol server in TypeScript, running locally via stdio. It exposes n8n's REST API as structured tools: workflow listing, definition inspection, node injection, activation control, and execution triggering. Claude Desktop connects to the server and can build, debug, and deploy multi-step automation workflows through conversation.</p>
+            <h2>Technical Decisions</h2>
+            <ul>
+                <li><strong>Workaround architecture:</strong> n8n's API has a known bug preventing workflow creation via POST. The server uses a create-in-UI-then-inject pattern — Claude identifies the blank workflow, then populates it programmatically.</li>
+                <li><strong>Credential separation:</strong> OAuth2 credentials (Gmail, Google APIs) require one-time manual setup before Claude can activate them — a deliberate security boundary.</li>
+                <li><strong>Local-first:</strong> Runs at localhost:5678, not reachable from cloud sessions. This is by design — sensitive automation stays on-premise.</li>
+            </ul>
+            <h2>What It Powers</h2>
+            <p>This server is the execution backbone for the PM Outreach Engine, Dental Revenue Engine, and the Nightly Distillation workflow. It enables Claude to orchestrate multi-step pipelines — lead discovery, personalised outreach, follow-up scheduling, Telegram alerting — entirely through natural language.</p>
+            <div class="meta-card">
+                <p><strong>Role:</strong> Sole builder</p>
+                <p><strong>Stack:</strong> TypeScript, Model Context Protocol, n8n REST API, Node.js</p>
+                <p><strong>Status:</strong> Shipped — in daily production use</p>
             </div>
         </article>
     </main>
-
-        <footer class="container" style="padding: 100px 0;"><p>Built with <span class="accent-pink">♥</span> by Clawy 🦾</p></footer>
+    <footer class="container" style="padding: 100px 0;"><p>© 2026 Garvin Chanderia</p></footer>
 </body>
 </html>
