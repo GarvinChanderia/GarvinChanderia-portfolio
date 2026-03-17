@@ -19,44 +19,55 @@
             </div>
         </div>
     </nav>
-
     <main class="container" style="padding-top: 120px;">
         <article style="max-width: 800px; margin: 0 auto;">
             <span style="font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent-color);">B2C SaaS</span>
             <h1 style="font-size: 56px; margin-top: 10px; margin-bottom: 20px;">BranClosr.</h1>
             <p style="font-size: 24px; color: var(--secondary-text); line-height: 1.4; margin-bottom: 40px;">
-                Brand–influencer deal acceleration. 30 days compressed to under 48 hours.
+                Dual-sided marketplace cutting brand–influencer deal time from 30 days to under 48 hours.
             </p>
-
             <img src="../assets/img/projects/branclosr-mockup.png" alt="BranClosr platform mockup" class="project-hero-img">
-
             <div style="font-size: 18px; line-height: 1.8; color: var(--text-color);">
                 <h2>The Problem</h2>
-                <p>Influencer marketing deals take 2–4 weeks to close. Brands and creators lose momentum in endless email chains, negotiation back-and-forth, and contract ambiguity. BranClosr compresses the entire cycle — discovery, negotiation, contract, payment — into a single platform targeting sub-48-hour campaign cycles.</p>
+                <p>Influencer marketing deals take 2–4 weeks to close. Brands and creators lose momentum in endless email chains, negotiation back-and-forth, and contract ambiguity. BranClosr compresses the entire cycle — discovery, negotiation, contract, payment — into a single platform targeting sub-48-hour campaign cycles for D2C brands and mid-tier influencers (10K–500K followers) in the Indian market.</p>
 
-                <h2 style="margin-top: 40px;">Architecture</h2>
-                <p>Full-stack PWA built with Next.js App Router, TypeScript strict mode, and Supabase/PostgreSQL with row-level security. The platform features real-time deal rooms, AI-assisted contract generation, and integrated payment flows. Designed mobile-first for the Indian creator economy.</p>
+                <h2 style="margin-top: 40px;">Technical Architecture</h2>
+                <p>Full-stack PWA built with Next.js 16 App Router (RSC + client components), TypeScript in strict mode, and Supabase/PostgreSQL with row-level security. State management via React Hooks, URL search params, and Zustand stores. Forms powered by React Hook Form + Zod validation. Data fetching through TanStack React Query. Styled with Tailwind CSS + shadcn/ui component patterns.</p>
+
+                <div style="margin-top: 30px; padding: 30px; background: var(--card-bg); border-radius: 20px; font-size: 15px;">
+                    <p style="margin-bottom: 8px;"><strong>Frontend:</strong> Next.js 16.1.6, TypeScript 5.x, Tailwind CSS 4.x, Lucide icons</p>
+                    <p style="margin-bottom: 8px;"><strong>State:</strong> Zustand, TanStack React Query 5.x, URL search params</p>
+                    <p style="margin-bottom: 8px;"><strong>Forms:</strong> React Hook Form 7.x + @hookform/resolvers + Zod 4.x</p>
+                    <p style="margin-bottom: 8px;"><strong>Backend:</strong> Supabase (PostgreSQL 15+, PostgREST, Realtime, Auth, Storage)</p>
+                    <p style="margin-bottom: 8px;"><strong>Auth:</strong> Supabase Auth (email/password + Google OAuth) via @supabase/ssr</p>
+                    <p style="margin-bottom: 8px;"><strong>Charts:</strong> Recharts 3.x</p>
+                    <p style="margin-bottom: 8px;"><strong>Testing:</strong> Vitest + React Testing Library + JSDOM</p>
+                    <p><strong>Hosting:</strong> Vercel (auto-deploy from GitHub main)</p>
+                </div>
+
+                <h2 style="margin-top: 40px;">What's Built</h2>
+                <p>56 TypeScript/TSX source files across a clean modular structure: public landing page with SEO optimisation and OpenGraph/JSON-LD, auth flows (login, register, OAuth callback), role-aware dashboard with campaigns, deals, deliverables, notifications, and profile pages. Components split into layout (header, sidebar, mobile nav, role guard), domain-specific (campaign cards, deal timelines, status badges), and shared (confirm dialogs, error boundaries, loading skeletons).</p>
 
                 <h2 style="margin-top: 40px;">Key Features</h2>
                 <ul>
-                    <li><strong>Deal Rooms:</strong> Real-time negotiation spaces with structured offer/counter-offer flows.</li>
+                    <li><strong>Deal Rooms:</strong> Real-time negotiation spaces with structured offer/counter-offer flows and status propagation.</li>
                     <li><strong>Smart Matching:</strong> AI-driven brand–influencer pairing based on niche, engagement, and budget fit.</li>
-                    <li><strong>Contract Engine:</strong> Auto-generated agreements with configurable terms and e-signatures.</li>
-                    <li><strong>Creator Profiles:</strong> Verified metrics, portfolio showcases, and rate cards.</li>
+                    <li><strong>Contract Engine:</strong> Auto-generated agreements with configurable terms.</li>
+                    <li><strong>Deliverables Tracking:</strong> Grouped by campaign with full lifecycle management.</li>
+                    <li><strong>Notifications:</strong> Mark-as-read, real-time updates, grouped by type.</li>
                 </ul>
 
-                <h2 style="margin-top: 40px;">Dev Stack</h2>
-                <p>Full documentation suite generated — PRD, Tech Architecture, Design Document, AI Implementation Contract, and AI Rules. Seven governance documents total, all stored in the Obsidian vault with proper frontmatter and backlinks.</p>
+                <h2 style="margin-top: 40px;">Documentation</h2>
+                <p>Full dev-stack documentation suite generated — seven governance documents including PRD, Technical Architecture, Design Document, AI Implementation Contract, AI Rules, and more. All stored in Obsidian vault with proper frontmatter and backlinks.</p>
                 
                 <div style="margin-top: 60px; padding: 40px; background: var(--card-bg); border-radius: 28px;">
-                    <p><strong>Role:</strong> Founder / Product Architect</p>
-                    <p><strong>Stack:</strong> Next.js, TypeScript, Supabase, PostgreSQL, Tailwind CSS, Zod</p>
-                    <p><strong>Status:</strong> Active build — architecture complete, MVP in development</p>
+                    <p><strong>Role:</strong> Founder / Product Architect / Solo Developer</p>
+                    <p><strong>Codebase:</strong> 56 TypeScript/TSX files, fully typed</p>
+                    <p><strong>Status:</strong> Active build — deployed on Vercel, MVP in development</p>
                 </div>
             </div>
         </article>
     </main>
-
     <footer style="padding: 100px 0; text-align: center; color: var(--secondary-text); font-size: 14px;">
         <p>Built with Clawy 🦾</p>
     </footer>

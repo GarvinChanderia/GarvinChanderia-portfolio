@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PM Outreach Engine | Garvin Chanderia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -18,38 +19,43 @@
             </div>
         </div>
     </nav>
-
     <main class="container" style="padding-top: 120px;">
         <article style="max-width: 800px; margin: 0 auto;">
-            <span class="accent-pink" style="font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Automation</span>
+            <span style="font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent-color);">Automation</span>
             <h1 style="font-size: 56px; margin-top: 10px; margin-bottom: 20px;">PM Outreach Engine.</h1>
             <p style="font-size: 24px; color: var(--secondary-text); line-height: 1.4; margin-bottom: 40px;">
-                Scaling professional networking using autonomous agentic workflows.
+                Automated job search system targeting AI consulting and PM roles at 18–25 LPA.
             </p>
-
             <div style="font-size: 18px; line-height: 1.8; color: var(--text-color);">
-                <h2>The Challenge</h2>
-                <p>Transitioning into high-impact Product Management roles (18+ LPA target) requires high-volume, high-quality networking. Manually identifying target companies, finding decision-makers, and crafting personalized outreach is a full-time job.</p>
+                <h2>The System</h2>
+                <p>An automated outreach pipeline for PM and AI consulting roles — lead discovery, personalised emails, LinkedIn messaging, and batch sends. Built on the same n8n + Claude MCP stack that powers the Dental Revenue Engine, reapplied to job search with different lead sources and personalisation strategies.</p>
 
-                <h2 style="margin-top: 40px;">The Solution</h2>
-                <p>I built an autonomous "Outreach Orchestrator" using **OpenClaw**. The engine uses LLMs to:</p>
+                <h2 style="margin-top: 40px;">Target Companies</h2>
                 <ul>
-                    <li>Scan LinkedIn and job boards for roles matching specific criteria in West Pune.</li>
-                    <li>Research the company's recent product launches or news.</li>
-                    <li>Draft highly personalized networking messages that focus on adding value to the PM team.</li>
-                    <li>Track status across a central Kanban board for real-time monitoring.</li>
+                    <li><strong>Big 4:</strong> PwC AC India Advisory (referral contact), Deloitte USI, EY GDS, KPMG</li>
+                    <li><strong>West Pune Product Cos:</strong> ElasticRun, Icertis, Mindtickle, Avalara</li>
+                    <li><strong>Product-based:</strong> Companies offering hybrid/remote across Pune and Bengaluru</li>
                 </ul>
 
-                <h2 style="margin-top: 40px;">Outcome</h2>
-                <p>This project demonstrates the application of Enterprise Architecture thinking to personal growth—treating career transition as a scalable business process.</p>
+                <h2 style="margin-top: 40px;">Pipeline</h2>
+                <ol style="padding-left: 24px;">
+                    <li style="margin-bottom: 12px;"><strong>Resume Scan → Role Mapping</strong> — Automated matching of skills to open roles.</li>
+                    <li style="margin-bottom: 12px;"><strong>Lead List Compilation</strong> — HR and PM contacts verified and compiled into CSV.</li>
+                    <li style="margin-bottom: 12px;"><strong>Cold Email + LinkedIn Templates</strong> — Personalised per company and role.</li>
+                    <li style="margin-bottom: 12px;"><strong>Batch Send</strong> — Automated delivery with reply tracking.</li>
+                </ol>
+
+                <h2 style="margin-top: 40px;">Current Status</h2>
+                <p>Gmail sender was blocked due to high-volume cold outreach — currently pivoting to WhatsApp Business API (Meta Cloud API) as the primary replacement channel. Lead list refresh underway for Big 4 targets.</p>
                 
                 <div style="margin-top: 60px; padding: 40px; background: var(--card-bg); border-radius: 28px;">
-                    <p><strong>Stack:</strong> Python, OpenClaw, Brave Search API, iMessage integration</p>
+                    <p><strong>Role:</strong> Solo Builder</p>
+                    <p><strong>Stack:</strong> n8n, Python, Claude MCP, Gmail/WhatsApp API</p>
+                    <p><strong>Status:</strong> Active — pivoting outreach channel</p>
                 </div>
             </div>
         </article>
     </main>
-
     <footer style="padding: 100px 0; text-align: center; color: var(--secondary-text); font-size: 14px;">
         <p>Built with Clawy 🦾</p>
     </footer>

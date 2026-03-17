@@ -4,7 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Garvin Chanderia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .capabilities-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 20px; }
+        .cap-card { padding: 24px; background: var(--card-bg); border-radius: 20px; }
+        .cap-card h4 { font-size: 18px; margin-bottom: 10px; }
+        .cap-card p { font-size: 15px; color: var(--secondary-text); }
+        .cert-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+        .cert-tag { padding: 6px 14px; background: var(--card-bg); border-radius: 20px; font-size: 13px; font-weight: 500; }
+        .timeline-item { padding-left: 24px; border-left: 2px solid var(--accent-color); margin-bottom: 32px; }
+        .timeline-item h4 { font-size: 18px; margin-bottom: 4px; }
+        .timeline-item .role { color: var(--accent-color); font-weight: 500; font-size: 14px; }
+        .timeline-item .dates { color: var(--secondary-text); font-size: 14px; }
+        .timeline-item p { margin-top: 8px; font-size: 16px; }
+        @media (max-width: 840px) { .capabilities-grid { grid-template-columns: 1fr; } }
+    </style>
 </head>
 <body>
     <nav>
@@ -20,47 +35,81 @@
     </nav>
 
     <main class="container" style="padding-top: 120px; max-width: 800px;">
-        <section class="about-hero">
-            <h1 style="font-size: 56px; margin-bottom: 30px;">Technologist. Builder.<br>Product Strategist.</h1>
-            <p style="font-size: 20px; line-height: 1.6; color: var(--secondary-text); margin-bottom: 40px;">
-                I am a Product-driven Analyst and AI Architect based in Pune, India. With a background in Computer Engineering and Enterprise Architecture, I specialize in building autonomous systems that solve real-world complexities.
-            </p>
-        </main>
+        <h1 style="font-size: 56px; margin-bottom: 30px;">Technologist. Builder.<br>Product Strategist.</h1>
+        <p style="font-size: 20px; line-height: 1.6; color: var(--secondary-text); margin-bottom: 60px;">
+            Product-driven AI architect based in Pune, India. I build autonomous systems, lead enterprise architecture engagements, and design products that bridge technical complexity with intuitive user experience. B.Tech Computer Engineering with AI/ML specialisation.
+        </p>
 
-        <section class="container" style="max-width: 800px; padding-bottom: 100px;">
-            <div style="font-size: 18px; line-height: 1.8; color: var(--text-color);">
-                <h2 style="text-align: left; font-size: 32px; margin-top: 40px;">The Mission.</h2>
-                <p>My work sits at the intersection of technical depth and creative vision. Whether I'm architecting TOGAF-based capability maps for manufacturing giants or building safety ecosystems for motorcyclists, my goal is always the same: **Orchestrating clarity from complexity.**</p>
-                
-                <h2 style="text-align: left; font-size: 32px; margin-top: 40px;">Experience.</h2>
-                <p>Currently, I am an **Enterprise Architecture Consultant** at Invecto Technologies, where I help enterprises align their IT portfolios with business goals. Previously, I served as a **Product Analyst** at Cummins India, focusing on data-driven insights and user experience.</p>
-                
-                <p style="margin-top: 20px;">I am also the founder of **IDEATEClub**, a UI/UX community at MIT ADT University, dedicated to bridging the gap between engineering and creative design.</p>
+        <div style="font-size: 18px; line-height: 1.8; color: var(--text-color);">
+            <h2 style="font-size: 32px; margin-top: 40px;">Experience.</h2>
+            
+            <div class="timeline-item">
+                <h4>Invecto Technologies</h4>
+                <span class="role">Product Consultant — Enterprise Architecture Platforms</span><br>
+                <span class="dates">November 2025 – Present · Pune, India</span>
+                <p>Consulting on EA platform strategy using Avolution ABACUS. Key client engagement with Bajaj Auto — KTM deal assessment, application portfolio rationalisation, and strategic architecture analysis across all 11 EA domains.</p>
+            </div>
 
-                <h2 style="text-align: left; font-size: 32px; margin-top: 40px;">Skills.</h2>
-                <div class="capabilities-grid" style="grid-template-columns: 1fr 1fr; margin-top: 20px;">
-                    <div>
-                        <h4 style="font-size: 18px; margin-bottom: 10px;">Product Management</h4>
-                        <p style="font-size: 14px;">Product Strategy, MVP Development, User Research, Lifecycle Management.</p>
-                    </div>
-                    <div>
-                        <h4 style="font-size: 18px; margin-bottom: 10px;">AI & Automation</h4>
-                        <p style="font-size: 14px;">Autonomous Agent Orchestration, OpenClaw, LLM Integration, Python.</p>
-                    </div>
-                    <div>
-                        <h4 style="font-size: 18px; margin-bottom: 10px;">Architecture</h4>
-                        <p style="font-size: 14px;">TOGAF, Application Portfolio Management (APM), Capability Mapping.</p>
-                    </div>
-                    <div>
-                        <h4 style="font-size: 18px; margin-bottom: 10px;">Design</h4>
-                        <p style="font-size: 14px;">Apple-esque UX/UI, Figma, Prototyping, Design Systems.</p>
-                    </div>
+            <div class="timeline-item">
+                <h4>Cummins India</h4>
+                <span class="role">Product Analyst (including internship)</span><br>
+                <span class="dates">~1 year 10 months</span>
+                <p>Data-driven insights, user experience research, and product analytics for one of India's leading manufacturing enterprises.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h4>ThrottleApp.</h4>
+                <span class="role">Founder / Product Lead / Lead Designer</span><br>
+                <span class="dates">2023 – 2024</span>
+                <p>Built a motorcycle road-trip companion app from 0 to 1. Flutter + Firebase. 300+ downloads, 200+ user interviews, 10+ MVP features shipped.</p>
+            </div>
+
+            <h2 style="font-size: 32px; margin-top: 60px;">Education.</h2>
+            <div class="timeline-item">
+                <h4>MIT ADT University</h4>
+                <span class="role">B.Tech Computer Engineering — AI/ML Specialisation</span><br>
+                <span class="dates">2020 – 2024 · Pune, India</span>
+                <p>Founded IDEATE UX Club — bridging engineering and creative design. Skills in UX design, Flutter, SQL (HackerRank 4-star), Python, stakeholder management.</p>
+            </div>
+
+            <h2 style="font-size: 32px; margin-top: 60px;">Capabilities.</h2>
+            <div class="capabilities-grid">
+                <div class="cap-card">
+                    <h4>Product Management</h4>
+                    <p>Product strategy, MVP development, user research, lifecycle management, stakeholder alignment. B2C SaaS focus.</p>
+                </div>
+                <div class="cap-card">
+                    <h4>AI & Automation</h4>
+                    <p>Claude MCP servers, n8n orchestration, LLM skill architecture, autonomous agent design, Python scripting.</p>
+                </div>
+                <div class="cap-card">
+                    <h4>Enterprise Architecture</h4>
+                    <p>TOGAF, ArchiMate, Avolution ABACUS, capability mapping, application portfolio management, traceability chains.</p>
+                </div>
+                <div class="cap-card">
+                    <h4>Design & Branding</h4>
+                    <p>Apple-esque minimalist UI/UX, Figma, design systems, brand identity, print production.</p>
                 </div>
             </div>
-        </section>
 
-        <footer style="padding: 100px 0; text-align: center; color: var(--secondary-text); font-size: 14px;">
-            <p>Built with <span class="accent-pink">♥</span> by Clawy 🦾</p>
-        </footer>
+            <h2 style="font-size: 32px; margin-top: 60px;">Certifications.</h2>
+            <div class="cert-list">
+                <span class="cert-tag">Microsoft AI PM Professional</span>
+                <span class="cert-tag">Google UX Design</span>
+                <span class="cert-tag">Google Data Analytics</span>
+                <span class="cert-tag">Databricks Lakehouse Fundamentals</span>
+                <span class="cert-tag">CUDA / GPU Computing</span>
+                <span class="cert-tag">Product Analytics (Product School)</span>
+                <span class="cert-tag">Digital Product Management (Coursera)</span>
+            </div>
+
+            <h2 style="font-size: 32px; margin-top: 60px;">Beyond Work.</h2>
+            <p>Motorcycle road trips once or twice a month — I run TrailForge Club, a riding community with its own brand identity. Push-pull-leg gym routine. Wide reader (Atomic Habits, Psychology of Money, Diary of a CEO, Hooked). Into coding, design, branding, and music production.</p>
+        </div>
+    </main>
+
+    <footer style="padding: 100px 0; text-align: center; color: var(--secondary-text); font-size: 14px;">
+        <p>Built with <span class="accent-pink">♥</span> by Clawy 🦾</p>
+    </footer>
 </body>
 </html>
