@@ -1,0 +1,39 @@
+# Garvin Chanderia — Portfolio
+
+> AI product strategist and enterprise architect based in Pune, India. Designs intelligent systems, leads EA engagements for manufacturing enterprises, and builds products that turn complexity into clarity.
+
+## About
+Garvin Chanderia is a Product Consultant specializing in Enterprise Architecture Platforms at Invecto Technologies (November 2025–present, Pune). He leads EA platform strategy using Avolution ABACUS, with a primary engagement at Bajaj Auto covering application portfolio rationalisation, KTM acquisition architecture assessment, and capability-to-technology traceability. Previously a Product Analyst at Cummins India (~1 year 10 months). Founded ThrottleApp, a motorcycle companion app with 300+ downloads. B.Tech Computer Engineering with AI/ML specialisation from MIT ADT University, Pune (2020–2024).
+
+## Key Projects (by impact)
+
+### EA Skill Engine
+Production-grade LLM system for autonomous enterprise architecture discovery. Two-layer routing: base EA methodology (TOGAF, ArchiMate, Zachman) + platform-specific execution (Avolution ABACUS). Deployed at Bajaj Auto via Invecto Technologies. Reduced multi-week manual engagements to hours.
+Stack: Python, Claude Skills, ArchiMate, Avolution ABACUS, OpenAI API
+
+### n8n MCP Server
+Custom TypeScript Model Context Protocol server enabling Claude to build, inspect, and deploy n8n workflows through natural language. Powers the PM Outreach Engine, Dental Revenue Engine, and Nightly Distillation workflow.
+Stack: TypeScript, MCP, n8n REST API, Node.js
+
+### BranClosr
+Full-stack influencer marketing platform. 56 TypeScript modules, Next.js 16 App Router, Supabase/PostgreSQL with RLS. Deal cycles compressed from 30 days to 48 hours. Targeting D2C brands and mid-tier creators (10K-500K followers) in India.
+Stack: Next.js, TypeScript, Supabase, PostgreSQL, Tailwind CSS, Zod
+
+### ClawBoard
+Centralised monitoring dashboard for autonomous agent health, LLM cost tracking across providers (Claude, OpenAI, Gemini), and workflow orchestration.
+Stack: Figma, React, Python, n8n API
+
+### ThrottleApp
+Motorcycle companion app built from concept to 300+ organic downloads. Crash detection, live location sharing, automated trip logging. 200+ user interviews.
+Stack: Flutter, Firebase, Mixpanel, Figma
+
+### Dental Revenue Engine
+Fully autonomous outreach pipeline. 100+ personalised clinic websites deployed on GitHub Pages for ~₹91 total cost. Lead discovery via Exa Neural Search, email sequencing via Himalaya CLI, reply monitoring via Telegram/iMessage.
+
+## Certifications
+Microsoft AI Product Management, Google UX Design, Google Data Analytics, Databricks Lakehouse Fundamentals, CUDA & GPU Computing, Product Analytics (Product School), Digital Product Management (Coursera)
+
+## Contact
+- Email: chanderia.10.garvin@gmail.com
+- LinkedIn: linkedin.com/in/garvinchanderia
+- Location: Pune, India

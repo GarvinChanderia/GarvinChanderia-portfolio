@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://garvin-portfolio.vercel.app/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://garvin-portfolio.vercel.app/about.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://garvin-portfolio.vercel.app/projects.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://garvin-portfolio.vercel.app/contact.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://garvin-portfolio.vercel.app/projects/ea-skill-engine.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://garvin-portfolio.vercel.app/projects/n8n-mcp-server.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://garvin-portfolio.vercel.app/projects/clawboard.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://garvin-portfolio.vercel.app/projects/branclosr.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://garvin-portfolio.vercel.app/projects/throttle-app.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://garvin-portfolio.vercel.app/projects/dentist-gym-outreach.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://garvin-portfolio.vercel.app/projects/pm-outreach.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://garvin-portfolio.vercel.app/projects/ai-audio-renamer.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://garvin-portfolio.vercel.app/projects/smartwatch-landscape.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://garvin-portfolio.vercel.app/projects/trailforge.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://garvin-portfolio.vercel.app/projects/nas-ubuntu-casaos.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://garvin-portfolio.vercel.app/projects/hr-offboarding.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+</urlset>
